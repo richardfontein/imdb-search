@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="imdb-search",
-    version="0.0.3",
+    version="0.0.4",
     entry_points={
         'console_scripts': ['imdb-search=imdb_search.main:main'],
     },
