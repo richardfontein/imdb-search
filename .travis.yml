@@ -4,8 +4,12 @@ python:
   - '3.6'
   - '3.7'
 
+install:
+  - python setup.py install
+
 deploy:
   provider: pypi
+  distributions: 'sdist bdist_wheel'
   user: '__token__'
   password:
     secure: 'coCHa/hTbJI492eW89XSDtqHqZHnNokjuOVxgC0kdbRDOJXoWsMr+g7PCuedLHLXyE11oXlE0qlZkWIjOtKe6pWbaopDMQ8GjrKrLKr1PmGzeFAZqmK6jf4tMSpiQu8LGTKG+zgCZVBdVmczlJHCUQnf+wo2945+L6R8aN8zBfxVwNHF1CR7Wi17LC+dwP1+A9TxoLHhnk06IPZ4z1Fp3YgeNGBxwiRX2nkYuJtJOE9u+DHzN2tCETnNcPHK3LU3V7FSKBZE0d31oCNG8KJffGXE/CEkkcnqhb+0bCxDKFD4qojVUmJDYnELOEmYekkxyCawmzJnXTBC9s/QEsQfHm0CmSm2216+cYjPxW4z8JofyACVR9WUz6FdA59Atpr70gt4Pwe1QnuQZ/H8/SawIy5xF0030C0EdQ1uQs21b/YojBqO+y61XQJTCp96PR6k9SpFken2NWWCjQ/wfUytm69axp0/JGkXzODTg981fOkjLKGeadyonPE1svPvnxK4IIcshTK0DHcLUX4OwNffvPHHW1UCRsk4kl4c6flpPit4HfWt09re2+KRJ8I1k/tk3IeNLlhU2NDXA2K1ZxbOM1KkktHNV4QzDxCev32tScTCaNtfpk/COUp31NBD3Mo95X0cL4U6SZ34bitLfEYzLjNc8BdR7BEKH0rnB1Vhl8w='

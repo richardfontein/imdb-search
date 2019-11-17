@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="imdb-search",
-    version="0.0.2",
+    version="0.0.3",
     entry_points={
         'console_scripts': ['imdb-search=imdb_search.main:main'],
     },
@@ -22,14 +22,9 @@ setuptools.setup(
         'requests'
     ],
     classifiers=[
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
+        "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=2.6',
+    python_requires='>=3',
 )
